@@ -7,7 +7,7 @@ import ProductCard from '@/components/ui/product-card';
 
 interface CategoryPageProps {
   params: {
-    categoryId: string;
+    categoryId: any;
   };
 }
 
