@@ -1,14 +1,14 @@
-import getBanner from "@/actions/get-banner";
-import getProducts from "@/actions/get-products";
-import Banner from "@/components/banner";
-import ProductList from "@/components/product-list";
-import Container from "@/components/ui/container";
+import getBanner from '@/actions/get-banner';
+import getProducts from '@/actions/get-products';
+import Banner from '@/components/banner';
+import ProductList from '@/components/product-list';
+import Container from '@/components/ui/container';
 
 export const revalidate = 0;
 
 const HomePage = async () => {
   const products = await getProducts({ isFeatured: true });
-  const banner = await getBanner("269242a0-744a-4ec7-a8b2-00210cbc7f79");
+  const banner = await getBanner('c37ef009-1825-48c0-bd6a-5a4ea20be873');
 
   return (
     <Container>
